@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :products
+  resources :categories
   resources :countries
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
