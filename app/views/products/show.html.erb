@@ -12,3 +12,13 @@
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+
+<p> Users fav This product </p>
+<table>
+<% @users.each do |usr| %>
+  <tr>
+  <td><%= usr.email %></td>
+  </tr>
+  <% end %>  
+  </table>  

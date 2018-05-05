@@ -4,5 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :country       
+  belongs_to :country ,required: false
+  has_and_belongs_to_many :products       
 end
